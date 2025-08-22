@@ -1,12 +1,16 @@
-# Hardhat Development Setup
+# 1. Go Solidity 🚀
 
-이 프로젝트는 [Hardhat](https://hardhat.org/) 기반 스마트 컨트랙트 개발 환경을 사용합니다.  
-⚠️ **Node.js 18 이상**이 필요합니다. (Node 16.x 이하에서는 설치가 실패할 수 있음)
+이 레포지토리는 **Hardhat + Solidity 학습용 프로젝트**입니다.  
+**Node.js 18 이상**이 필요합니다. (Node 16.x 이하에서는 설치가 실패할 수 있음)
 
 ---
 
-## 🚀 Node.js 버전 업그레이드 (Mac/Linux)
+## ⚙️ Node.js 업그레이드 (Mac/Linux 기준)
 ```bash
+1. nvm 설치 여부 확인
+command -v nvm
+
+🚀 Node.js 버전 업그레이드 (Mac/Linux)
 1. nvm 설치 여부 확인
 command -v nvm
 
@@ -26,22 +30,22 @@ nvm alias default 18    # 기본 버전을 Node 18로 고정
 4. 확인
 node -v
 npm -v
-👉 v18.x.x 이상이 나오면 성공!
+🚀 v18.x.x 이상이 나오면 성공!
 
-💻 Hardhat 설치 및 실행
+🚀  Hardhat 설치 및 실행
 프로젝트 의존성 설치
 npm install --save-dev hardhat @nomicfoundation/hardhat-toolbox
 
 Hardhat 초기화
 npx hardhat
-✅ 실행 후, Create a JavaScript project 선택 → 환경 세팅 완료.
+🚀 실행 후, Create a JavaScript project 선택 → 환경 세팅 완료.
 
-📌 Troubleshooting
+🚀 Troubleshooting
 EBADENGINE 관련 오류 발생 시:
 Node.js 버전이 낮아서 발생하는 문제
 반드시 Node.js 18 이상으로 업그레이드 필요
 
-
+📂 프로젝트 구조
 # 1.-Go-Solidity
 solidity-basics/
 ├── 01-hello-world/
@@ -52,4 +56,5 @@ solidity-basics/
 ├── 06-modifiers/
 ├── 07-inheritance-interface/
 ├── 08-events-logging/
-└── test/ (하드햇 테스트 예시)
+└── test/   # Hardhat 테스트 예시
+
