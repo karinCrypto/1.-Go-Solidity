@@ -31,6 +31,7 @@ nvm alias default 18    # 기본 버전을 Node 18로 고정
 node -v
 npm -v
 → v18.x.x 이상이 나오면 성공!
+<img width="368" height="59" alt="스크린샷 2025-08-23 오전 2 04 44" src="https://github.com/user-attachments/assets/7f34b606-d8a1-4cec-a456-8ecc2da09eb0" />
 
 🚀 Hardhat 설치 및 실행
 프로젝트 의존성 설치
