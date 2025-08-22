@@ -1,0 +1,61 @@
+# 1. Go Solidity 🚀
+
+이 레포지토리는 **Hardhat + Solidity 학습용 프로젝트**입니다.  
+> ⚠️ **Node.js 18 이상**이 필요합니다. (Node 16.x 이하에서는 설치가 실패할 수 있음)
+
+---
+
+## ⚙️ Node.js 업그레이드 (Mac/Linux 기준)
+
+### 1. nvm 설치 여부 확인
+```bash
+command -v nvm
+
+2. nvm 설치 (설치 안 되어 있다면)
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+
+터미널 환경 다시 로드:
+source ~/.zshrc   # Mac 기본(zsh) 환경
+source ~/.bashrc  # bash 환경
+
+확인:
+command -v nvm
+→ nvm 이라고 뜨면 성공!
+
+3. Node.js 18 설치 및 적용
+nvm install 18          # Node 18 설치
+nvm use 18              # 현재 세션에서 Node 18 사용
+nvm alias default 18    # 기본 버전을 Node 18로 고정
+
+4. 확인
+node -v
+npm -v
+→ v18.x.x 이상이 나오면 성공!
+
+
+🚀 Hardhat 설치 및 실행
+프로젝트 의존성 설치
+npm install --save-dev hardhat @nomicfoundation/hardhat-toolbox
+
+Hardhat 초기화
+npx hardhat
+실행 후 → Create a JavaScript project 선택 → 환경 세팅 완료 ✅
+
+🛠️ Troubleshooting
+EBADENGINE 관련 오류 발생 시:
+→ Node.js 버전이 낮아서 발생하는 문제
+→ 반드시 Node.js 18 이상으로 업그레이드 필요
+
+📂 프로젝트 구조
+# 1.-Go-Solidity
+solidity-basics/
+├── 01-hello-world/
+├── 02-variables-and-types/
+├── 03-control-structures/
+├── 04-arrays-mapping/
+├── 05-struct-enum/
+├── 06-modifiers/
+├── 07-inheritance-interface/
+├── 08-events-logging/
+└── test/   # Hardhat 테스트 예시
+
