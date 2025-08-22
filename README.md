@@ -6,21 +6,21 @@
 ---
 
 ## ⚙️ Node.js 업그레이드 (Mac/Linux 기준)
-```bash
-1. nvm 설치 여부 확인
-command -v nvm
 
 🚀 Node.js 버전 업그레이드 (Mac/Linux)
 1. nvm 설치 여부 확인
 command -v nvm
 
 2. nvm 설치 (설치 안 되어 있다면)
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.5/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 
 터미널 환경 다시 로드:
 source ~/.zshrc   # Mac 기본(zsh) 환경
 또는
 source ~/.bashrc  # bash 환경
+
+확인: nvm 라고 뜨면 성공!
+command -v nvm
 
 3. Node.js 18 설치 및 적용
 nvm install 18          # Node 18 설치
