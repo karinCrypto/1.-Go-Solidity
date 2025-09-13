@@ -1,0 +1,23 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.20;
+
+contract SpecialFunctions {
+    address public owner;
+    uint public value;
+
+    // 1. constructor (배포 시 1회 실행)
+    constructor() {
+        owner = msg.sender; // 배포한 사람을 owner로 저장
+    }
+
+    // 2. receive (ETH 전송만 들어올 때 실행)
+    receive() external payable {
+        value += msg.value; // 들어온 이더 더하기
+    }
+
+    // 3. fallback (데이터와 함께 잘못된 함수 호출 시 실행)
+    fallback() external payable {
+        // 예: 로그 남기거나, revert 시킬 수 있음
+        value += msg.value; // 이더도 받을 수 있음
+    }
+}
