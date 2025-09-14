@@ -1,6 +1,6 @@
 # 1. Go Solidity 🚀
 
-Karin.blockdev@gmail.com 문의사한
+Karin.blockdev@gmail.com 문의사항
 
 이 레포지토리는 **Hardhat + Solidity 학습용 프로젝트**입니다.  
 > ⚠️ **Node.js 18 이상**이 필요합니다. (Node 16.x 이하에서는 설치가 실패할 수 있음)
